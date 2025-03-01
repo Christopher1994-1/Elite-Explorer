@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  align-items: anchor-center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+nav .image-side {
+  display: flex;
+  align-items: anchor-center;
+}
+nav .image-side img {
+  width: 120px;
+}
+nav .image-side a {
+  color: white;
+  font-size: 34px;
+  font-family: fantasy;
+}
+nav .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: math;
+  padding: 10px;
+  display: flex;
+  align-items: anchor-center;
+}
+nav .links a:hover {
+  background-color: grey;
+  border-radius: 15px;
+}
+nav .links span {
+  font-size: 15px;
+  margin-left: 3px;
+  color: rgb(69, 69, 69);
+}
+nav .links #current {
+  background-color: grey;
+  border-radius: 15px;
+}
+nav .mobile-nav {
+  display: none;
+}/*# sourceMappingURL=navbar_styles.css.map */

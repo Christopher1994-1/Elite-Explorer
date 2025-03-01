@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+
+    <main>
+        <div class="welcome_sign">
+            <h1>Welcome to Elite Explorer: Calculate Your Explored Systems and Estimate Closely Accurate Payouts</h1>
+            <small>These numbers are based off the froniter forums data which can be found <a href="#">here</a> for more info.</small>
+        </div>
+
+
+
+        <div class="calculation_are">
+            <h2>Select the Celestial Bodies You've Encountered in the System:</h2>
+            <small>Not providing a number/leaving blank will be counted as 0</small>
+            {% include 'index_stuff/celestial_inputs.html' %}
+        </div>
+    </main>
+
+
+    
+{% endblock content %}

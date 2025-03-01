@@ -1,0 +1,163 @@
+nav {
+  display: flex;
+  align-items: anchor-center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+nav .image-side {
+  display: flex;
+  align-items: anchor-center;
+}
+nav .image-side img {
+  width: 120px;
+}
+nav .image-side a {
+  color: white;
+  font-size: 34px;
+  font-family: fantasy;
+}
+nav .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: math;
+  padding: 10px;
+  display: flex;
+  align-items: anchor-center;
+}
+nav .links a:hover {
+  background-color: grey;
+  border-radius: 15px;
+}
+nav .links span {
+  font-size: 15px;
+  margin-left: 3px;
+  color: rgb(69, 69, 69);
+}
+nav .links #current {
+  background-color: grey;
+  border-radius: 15px;
+}
+nav .mobile-nav {
+  display: none;
+}
+
+main .welcome_sign {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+}
+main .welcome_sign h1 {
+  font-family: sans-serif;
+  font-size: 17px;
+  cursor: default;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+main .welcome_sign small {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-family: math;
+}
+main .calculation_are {
+  border-top: 1px solid white;
+  width: 95%;
+  margin: auto;
+  margin-top: 15px;
+}
+main .calculation_are h2 {
+  color: white;
+  font-family: math;
+  padding: 0;
+  margin: 0;
+}
+main .calculation_are small {
+  color: white;
+  font-family: math;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+main .calculation_are form {
+  margin-top: 25px;
+}
+main .calculation_are form .input_type1 {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+main .calculation_are form .input_type1 .labels {
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+main .calculation_are form .input_type1 .input_area {
+  width: 100%;
+}
+main .calculation_are form .input_type1 .input_area input {
+  padding: 15px;
+  border: none;
+  background-color: #333;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  color: white;
+  width: 55%;
+}
+main .calculation_are form .input_type1 .input_area input:focus {
+  outline: none;
+  border-bottom: 1px solid #08FADC;
+}
+
+/* Hide the default checkbox appearance */
+.checkbox-button {
+  display: none;
+}
+
+/* Style the label to look like a button */
+.button-label {
+  display: inline-block;
+  padding: 10px 8px;
+  margin: 5px;
+  background-color: #25af9f;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: math;
+}
+
+#checked {
+  background-color: #197469;
+  cursor: default;
+}
+
+/* Change the background color when checked */
+.checkbox-button:checked + .button-label {
+  background-color: #197469;
+}
+
+/* Optional: Change the label when the checkbox is hovered */
+.button-label:hover {
+  background-color: #197469;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=giant_main_file.css.map */

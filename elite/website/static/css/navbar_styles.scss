@@ -1,0 +1,62 @@
+
+
+nav {
+    display: flex;
+    align-items: anchor-center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+
+
+    .image-side {
+        display: flex;
+        align-items: anchor-center;
+        img {
+            width: 120px;
+        }
+
+        a {
+            color: white;
+            font-size: 34px;
+            font-family: fantasy;
+        }
+    }
+
+
+    .links {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: math;
+            padding: 10px;
+            display: flex;
+            align-items: anchor-center;
+
+            &:hover {
+                background-color: grey;
+                border-radius: 15px;
+            }
+        }
+
+
+        span {
+            font-size: 15px;
+            margin-left: 3px;
+            color: rgb(69, 69, 69);
+        }
+
+        #current {
+            background-color: grey;
+            border-radius: 15px;
+        }
+    }
+
+
+    .mobile-nav {
+        display: none;
+    }
+}

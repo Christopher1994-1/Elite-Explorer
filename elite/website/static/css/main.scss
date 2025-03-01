@@ -1,0 +1,137 @@
+
+
+$side-color: #08FADC;
+$side-color-dark: #25af9f;
+$side-color-clicked: #197469;
+
+
+
+main {
+
+    .welcome_sign {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 17px;
+            cursor: default;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        small {
+            color: white;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            font-family: math;
+        }
+
+    }
+
+
+    .calculation_are {
+        border-top: 1px solid white;
+        width: 95%;
+        margin: auto;
+        margin-top: 15px;
+
+
+        h2 {
+            color: white;
+            font-family: math;
+            padding: 0;
+            margin: 0;
+        }
+
+        small {
+            color: white;
+            font-family: math;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+
+        }
+
+
+        form {
+            margin-top: 25px;
+            .input_type1 {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+
+
+                .labels {
+                    color: white;
+                    font-size: 28px;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                }
+
+                .input_area {
+                    width: 100%;
+
+                    input {
+                        padding: 15px;
+                        border: none;
+                        background-color: #333;
+                        border-radius: 12px;
+                        margin-bottom: 16px;
+                        color: white;
+                        width: 55%;
+    
+                        &:focus {
+                            outline: none;
+                            border-bottom: 1px solid $side-color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+/* Hide the default checkbox appearance */
+.checkbox-button {
+    display: none;
+}
+
+/* Style the label to look like a button */
+.button-label {
+    display: inline-block;
+    padding: 10px 8px;
+    margin: 5px;
+    background-color: $side-color-dark;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: math;
+}
+
+
+#checked {
+    background-color: $side-color-clicked;
+    cursor: default;
+}
+
+/* Change the background color when checked */
+.checkbox-button:checked + .button-label {
+    background-color: $side-color-clicked;
+}
+
+/* Optional: Change the label when the checkbox is hovered */
+.button-label:hover {
+    background-color: $side-color-clicked;
+}
