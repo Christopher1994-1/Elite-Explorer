@@ -36,7 +36,10 @@ if (formVar) {
     formVar.addEventListener('submit', function (event) {
         event.preventDefault();
         let earthLikeWorldsData = get_celestial_info("earthLikeWorlds", "earthLikeWorlds-check", "button2", "button3", "button4", "button5", "button6");
-        getting_backend_data(earthLikeWorldsData);
+        let AmmoniaWorldsData = get_celestial_info("AmmoniaWorlds", "bttn7", "bttn8", "bttn9", "bttn10", "bttn11", "bttn12");
+        let water_world_data = get_celestial_info("waterworlds", "bttn13", "bttn14", "bttn15", "bttn16", "bttn17", "bttn18");
+        let returnData = `${earthLikeWorldsData};${AmmoniaWorldsData};${water_world_data}`;
+        getting_backend_data(returnData);
     });
 }
 ;

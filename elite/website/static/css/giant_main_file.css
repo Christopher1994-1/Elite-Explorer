@@ -1,52 +1,103 @@
+/* Import modern fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+/* Navigation */
 nav {
   display: flex;
-  align-items: anchor-center;
+  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  padding: 15px 10%;
+  background: rgba(20, 20, 20, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Mobile Nav */
 }
 nav .image-side {
   display: flex;
-  align-items: anchor-center;
+  align-items: center;
 }
 nav .image-side img {
-  width: 120px;
+  width: 100px;
 }
 nav .image-side a {
   color: white;
-  font-size: 34px;
-  font-family: fantasy;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 10px;
 }
 nav .links {
-  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 25px;
 }
 nav .links a {
   color: white;
   text-decoration: none;
-  font-size: 30px;
-  font-family: math;
-  padding: 10px;
-  display: flex;
-  align-items: anchor-center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 nav .links a:hover {
-  background-color: grey;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
 }
-nav .links span {
-  font-size: 15px;
-  margin-left: 3px;
-  color: rgb(69, 69, 69);
+nav .links .dropdownContainer {
+  width: 185px;
+  background-color: #202020;
+  position: absolute;
+  padding: 0px;
+  text-align: center;
+  border: 2px solid white;
 }
-nav .links #current {
-  background-color: grey;
-  border-radius: 15px;
+nav .links .dropdownContainer .dropdownClass {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 0px;
+}
+nav .links .dropdownContainer .dropdownClass:hover {
+  background-color: transparent;
+  color: #08FADC;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 nav .mobile-nav {
   display: none;
 }
 
+/* Welcome Sign */
+.welcome_sign {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+.welcome_sign h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.welcome_sign small {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
 main .welcome_sign {
   width: 95%;
   margin: auto;
@@ -69,24 +120,31 @@ main .welcome_sign small {
   width: 100%;
   font-family: math;
 }
+main .welcome_sign small a {
+  color: #08FADC;
+}
 main .calculation_are {
   border-top: 1px solid white;
   width: 95%;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 main .calculation_are h2 {
   color: white;
   font-family: math;
   padding: 0;
   margin: 0;
+  text-align: center;
+  font-size: 36px;
 }
 main .calculation_are small {
-  color: white;
   font-family: math;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  color: #08FADC;
 }
 main .calculation_are form {
   margin-top: 25px;
@@ -117,6 +175,105 @@ main .calculation_are form .input_type1 .input_area input {
 main .calculation_are form .input_type1 .input_area input:focus {
   outline: none;
   border-bottom: 1px solid #08FADC;
+}
+
+.enterbutton {
+  width: 70%;
+  margin: auto;
+  margin-top: 25px;
+}
+.enterbutton button {
+  width: 100%;
+  padding: 12px;
+  font-size: 45px;
+  font-family: fantasy;
+  background-color: #9b9b9b;
+  color: #000000;
+  letter-spacing: 5px;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+}
+.enterbutton button:hover {
+  background-color: #bababa;
+}
+
+.more_details_explorer {
+  background-color: black;
+}
+.more_details_explorer h1 {
+  color: white;
+}
+
+.inputs1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  background-color: #222222;
+  padding: 10px;
+  align-items: stretch;
+  gap: 10px;
+}
+.inputs1 .main_body {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+.inputs1 .main_body p {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  font-family: math;
+  font-weight: 600;
+  margin-top: 10;
+}
+.inputs1 .main_body .image_holder {
+  position: relative;
+}
+.inputs1 .main_body .image_holder img {
+  width: 100%;
+}
+.inputs1 .main_body .image_holder .number_of_bodies {
+  position: absolute;
+  top: 18px;
+  left: 93%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: "FontAwesome";
+  align-items: anchor-center;
+  border-radius: 50%;
+}
+.inputs1 .main_body .buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 14px;
+}
+.inputs1 .main_body .buttons button {
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.inputs1 .main_body .buttons button:hover {
+  color: #197469;
+}
+.inputs1 .main_body .buttons button:hover + .main_body {
+  border: 1px solid #08FADC;
 }
 
 /* Hide the default checkbox appearance */

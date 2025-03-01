@@ -1,62 +1,211 @@
 
 
+// nav {
+//     display: flex;
+//     align-items: anchor-center;
+//     justify-content: space-between;
+//     border-bottom: 1px solid white;
+
+
+//     .image-side {
+//         display: flex;
+//         align-items: anchor-center;
+//         img {
+//             width: 120px;
+//         }
+
+//         a {
+//             color: white;
+//             font-size: 34px;
+//             font-family: fantasy;
+//         }
+//     }
+
+
+//     .links {
+//         width: 50%;
+//         display: flex;
+//         justify-content: space-evenly;
+
+//         a {
+//             color: white;
+//             text-decoration: none;
+//             font-size: 30px;
+//             font-family: math;
+//             padding: 10px;
+//             display: flex;
+//             align-items: anchor-center;
+
+//             &:hover {
+//                 background-color: grey;
+//                 border-radius: 15px;
+//             }
+//         }
+
+
+//         span {
+//             font-size: 15px;
+//             margin-left: 3px;
+//             color: rgb(69, 69, 69);
+//         }
+
+//         #current {
+//             background-color: grey;
+//             border-radius: 15px;
+//         }
+//     }
+
+
+//     .mobile-nav {
+//         display: none;
+//     }
+// }
+
+
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+/* Navigation */
 nav {
     display: flex;
-    align-items: anchor-center;
+    align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid white;
-
+    padding: 15px 10%;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     .image-side {
         display: flex;
-        align-items: anchor-center;
+        align-items: center;
+
         img {
-            width: 120px;
+            width: 100px;
         }
 
         a {
             color: white;
-            font-size: 34px;
-            font-family: fantasy;
+            font-size: 28px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 10px;
+
         }
     }
 
-
     .links {
-        width: 50%;
         display: flex;
-        justify-content: space-evenly;
+        gap: 25px;
 
         a {
             color: white;
             text-decoration: none;
-            font-size: 30px;
-            font-family: math;
-            padding: 10px;
-            display: flex;
-            align-items: anchor-center;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            transition: 0.3s ease-in-out;
+            border-radius: 8px;
+            font-family: sans-serif;
 
             &:hover {
-                background-color: grey;
-                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.2);
+
             }
+
         }
 
 
-        span {
-            font-size: 15px;
-            margin-left: 3px;
-            color: rgb(69, 69, 69);
-        }
+        .dropdownContainer {
+            width: 185px;
+            background-color: #202020;
+            position: absolute;
+            padding: 0px;
+            text-align: center;
+            border: 2px solid white;
+        
+            .dropdownClass {
+                margin-bottom: 10px;
+                font-family: sans-serif;
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                border-radius: 0px;
 
-        #current {
-            background-color: grey;
-            border-radius: 15px;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #08FADC;
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                }
+            }
         }
     }
 
 
+    /* Mobile Nav */
     .mobile-nav {
         display: none;
     }
+
+
+
+
 }
+
+
+/* Welcome Sign */
+.welcome_sign {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+
+    small {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+
+// /* Buttons */
+// button {
+//     background: #1f1f1f;
+//     color: white;
+//     border: 1px solid rgba(255, 255, 255, 0.2);
+//     padding: 10px 20px;
+//     font-size: 16px;
+//     cursor: pointer;
+//     border-radius: 8px;
+//     transition: all 0.3s ease-in-out;
+// }
+
+// button:hover {
+//     background: rgba(255, 255, 255, 0.2);
+//     backdrop-filter: blur(8px);
+// }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,83 @@
+
+{% load static %}
+<div class="inputs1">
+
+
+    <div class="main_body">
+        <p>Ammonia World</p>
+
+        <div class="image_holder">
+            <img src="{% static 'images/Ammonia-Planet.webp' %}" alt="elite dangerous ammonia world">
+            <p id="number_of_ammonia_worlds" class="number_of_bodies">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="add_new_body('number_of_ammonia_worlds')"><i class="fa-solid fa-circle-up"></i></button>
+            <button onclick="remove_body('number_of_ammonia_worlds')"><i class="fa-solid fa-circle-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="main_body">
+        <p>Earth Like World</p>
+
+        <div class="image_holder">
+            <img src="{% static 'images/Earth-Like-World.webp' %}" alt="elite dangerous earth like world">
+            <p id="number_of_elw" class="number_of_bodies">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="add_new_body('number_of_elw')"><i class="fa-solid fa-circle-up"></i></button>
+            <button onclick="remove_body('number_of_elw')"><i class="fa-solid fa-circle-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="main_body">
+        <p>Water World</p>
+
+        <div class="image_holder">
+            <img src="{% static 'images/Water-World.webp' %}" alt="elite dangerous water world">
+            <p id="number_of_water-world" class="number_of_bodies">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="add_new_body('number_of_water-world')"><i class="fa-solid fa-circle-up"></i></button>
+            <button onclick="remove_body('number_of_water-world')"><i class="fa-solid fa-circle-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="main_body">
+        <p>High Metal Content World</p>
+
+        <div class="image_holder">
+            <img src="{% static 'images/high-metal-content-world-v1.webp' %}" alt="elite dangerous high metal content world">
+            <p id="number_of_hmcw" class="number_of_bodies">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="add_new_body('number_of_hmcw')"><i class="fa-solid fa-circle-up"></i></button>
+            <button onclick="remove_body('number_of_hmcw')"><i class="fa-solid fa-circle-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="main_body">
+        <p>Class I Gas Giant</p>
+
+        <div class="image_holder">
+            <img src="{% static 'images/gas-giant-v1.webp' %}" alt="elite dangerous class i gas giant">
+            <p id="number_of_class1gasgiant" class="number_of_bodies">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="add_new_body('number_of_class1gasgiant')"><i class="fa-solid fa-circle-up"></i></button>
+            <button onclick="remove_body('number_of_class1gasgiant')"><i class="fa-solid fa-circle-down"></i></button>
+        </div>
+    </div>
+
+
+</div>
+
+

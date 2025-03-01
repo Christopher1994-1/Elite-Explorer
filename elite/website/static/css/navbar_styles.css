@@ -1,48 +1,100 @@
+/* Import modern fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+/* Navigation */
 nav {
   display: flex;
-  align-items: anchor-center;
+  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  padding: 15px 10%;
+  background: rgba(20, 20, 20, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Mobile Nav */
 }
 nav .image-side {
   display: flex;
-  align-items: anchor-center;
+  align-items: center;
 }
 nav .image-side img {
-  width: 120px;
+  width: 100px;
 }
 nav .image-side a {
   color: white;
-  font-size: 34px;
-  font-family: fantasy;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 10px;
 }
 nav .links {
-  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 25px;
 }
 nav .links a {
   color: white;
   text-decoration: none;
-  font-size: 30px;
-  font-family: math;
-  padding: 10px;
-  display: flex;
-  align-items: anchor-center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 nav .links a:hover {
-  background-color: grey;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
 }
-nav .links span {
-  font-size: 15px;
-  margin-left: 3px;
-  color: rgb(69, 69, 69);
+nav .links .dropdownContainer {
+  width: 185px;
+  background-color: #202020;
+  position: absolute;
+  padding: 0px;
+  text-align: center;
+  border: 2px solid white;
 }
-nav .links #current {
-  background-color: grey;
-  border-radius: 15px;
+nav .links .dropdownContainer .dropdownClass {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 0px;
+}
+nav .links .dropdownContainer .dropdownClass:hover {
+  background-color: transparent;
+  color: #08FADC;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 nav .mobile-nav {
   display: none;
+}
+
+/* Welcome Sign */
+.welcome_sign {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+.welcome_sign h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.welcome_sign small {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mobile-nav {
+    display: block;
+  }
 }/*# sourceMappingURL=navbar_styles.css.map */
