@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="{% static 'images/icon2.ico' %}" type="image/x-icon">
 </head>
 <body>
+    <input type="hidden" id="_03nj4n4" value="{{3nj4n4}}">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}" id="csrfTok">
+
     {% block navbar %}
         {% include 'navbar.html' %}
     {% endblock navbar %}

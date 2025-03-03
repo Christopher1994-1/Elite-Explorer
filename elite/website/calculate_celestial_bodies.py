@@ -29,6 +29,8 @@ def calculate_ammonia_world(number_of_worlds: int, dss:str, terraformable:str, f
     
     total_sum: list = [FSS]
     
+    
+    
     if not number_of_worlds:
         return 0
     
@@ -303,11 +305,11 @@ def calculate_high_metal_content_planet(number_of_worlds: int, dss:str, terrafor
         int: total credits earned
     """
     
-    FSS = 99747
-    FD = 159596
-    DSS = 353217
-    FM = 771912
-    efficiency_bonus = 87333
+    FSS = 14070
+    FD = 22511
+    DSS = 49821
+    FM = 108881
+    efficiency_bonus = 12320
     
     
     total_sum: list = [FSS]
@@ -641,7 +643,7 @@ def calculate_rocky_ice_body(number_of_worlds: int, dss:str, terraformable:str, 
 
 
 #. CLASS I GAS GIANT
-def calculate_gas_giant_class_one(number_of_worlds: int, dss:str, terraformable:str, fm:str, fd:str, meb:str, all:str) -> int:
+def calculate_gas_giant_class_one(number_of_worlds: int, dss:str, fm:str, fd:str, meb:str, all:str) -> int:
     """calculating the return credits for exploring Class I Gas Giant
 
     Args:
@@ -701,7 +703,7 @@ def calculate_gas_giant_class_one(number_of_worlds: int, dss:str, terraformable:
 
 
 #. CLASS II GAS GIANT
-def calculate_gas_giant_class_two(number_of_worlds: int, dss:str, terraformable:str, fm:str, fd:str, meb:str, all:str) -> int:
+def calculate_gas_giant_class_two(number_of_worlds: int, dss:str, fm:str, fd:str, meb:str, all:str) -> int:
     """calculating the return credits for exploring Class II Gas Giant
 
     Args:
@@ -759,7 +761,7 @@ def calculate_gas_giant_class_two(number_of_worlds: int, dss:str, terraformable:
 
 
 #. CLASS III GAS GIANT
-def calculate_gas_giant_class_three(number_of_worlds: int, dss:str, terraformable:str, fm:str, fd:str, meb:str, all:str) -> int:
+def calculate_gas_giant_class_three(number_of_worlds: int, dss:str, fm:str, fd:str, meb:str, all:str) -> int:
     """calculating the return credits for exploring Class III Gas Giant
 
     Args:

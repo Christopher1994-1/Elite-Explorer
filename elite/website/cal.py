@@ -33,9 +33,9 @@ def calculate_individual_values(name, fss, fss_fd, fss_dss, fss_dss_fm, fss_dss_
 
 
 # # # # # Example usage with Ammonia World values
-# title = "Class V Gas Giant"
-# data = calculate_individual_values(title, 667, 1734, 3613, 8774, 10425)
-# print(data)
+title = "High Metal Content World"
+data = calculate_individual_values(title, 14070, 36581, 76211, 185092, 219923)
+print(data)
 
 
 

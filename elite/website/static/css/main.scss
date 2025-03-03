@@ -133,12 +133,135 @@ main {
 
 
 .more_details_explorer {
-    background-color: black;
+    background-color: #272727;
     width: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 600px;
+    overflow: auto;
+    padding: 10px;
+
 
     h1 {
         color: white;
         font-family: system-ui;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        color: white;
+        padding: 0;
+        margin: 0;
+        margin-left: 15px;
+        font-family: math;
+        cursor: default;
+        margin-bottom: 15px;
+    }
+
+
+    .more_details_sections {
+
+        .enteredBody {
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: anchor-center;
+            margin-bottom: 15px;
+
+            img {
+                width: 115px;
+                margin-right: 10px;
+            }
+
+
+            .right-side-p {
+                display: flex;
+                flex-direction: column;
+
+
+                p {
+                    color: white;
+                    padding: 0;
+                    margin: 0;
+                    font-family: math;
+                    font-size: 31px;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+
+
+    .bottomButton {
+        display: flex;
+        justify-content: end;
+        width: 95%;
+
+        button {
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 25px;
+            font-weight: 700;
+            border-radius: 11px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #25af9f;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+
+
+.final_credits_calculated {
+    background-color: #272727;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    border: 7px solid white;
+
+    h1 {
+        font-size: 45px;
+        padding: 0;
+        margin: 0;
+        font-family: math;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 42px;
+        color: white;
+        margin-left: 26px;
+    }
+
+
+    button {
+        border: none;
+        position: absolute;
+        bottom: -40%;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
     }
 }
 
